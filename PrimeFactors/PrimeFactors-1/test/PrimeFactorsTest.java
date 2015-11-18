@@ -1,5 +1,6 @@
 import junit.framework.TestCase;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.Assert.*;
@@ -13,6 +14,6 @@ public class PrimeFactorsTest extends TestCase {
         assertEquals(list(), PrimeFactors.generate(1));
     }
     private List<Integer> list() {
-        return null;
+        return new ArrayList<Integer>();
     }
 }
