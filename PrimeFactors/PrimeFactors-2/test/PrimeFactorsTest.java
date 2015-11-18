@@ -4,6 +4,7 @@ import static org.junit.Assert.assertEquals;
 import junit.framework.TestCase;
 import primeFactors.PrimeFactors;
 
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -13,7 +14,7 @@ public class PrimeFactorsTest extends TestCase {
     }
 
     private List<Integer> list() {
-        return null;
+        return new ArrayList<Integer>();
     }
 
 }
