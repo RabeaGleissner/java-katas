@@ -9,4 +9,10 @@ import static org.junit.Assert.assertEquals;
  * Created by rabeagleissner on 18/11/2015.
  */
 public class PrimeFactorsTest extends TestCase {
+    public void testOne() throws Exception {
+        assertEquals(list(), PrimeFactors.generate(1));
+    }
+    private List<Integer> list() {
+        return null;
+    }
 }
