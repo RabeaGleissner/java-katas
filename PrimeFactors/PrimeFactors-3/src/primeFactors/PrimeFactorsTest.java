@@ -15,11 +15,16 @@ public class PrimeFactorsTest {
     @Test
     public void testTwo() {
         assertEquals(Arrays.asList(2), generate(2));
-
     }
 
     @Test
     public void testThree() {
         assertEquals(Arrays.asList(3), generate(3));
+    }
+
+    @Test
+    public void testFour() {
+        assertEquals(Arrays.asList(2,2),generate(4));
+
     }
 }
