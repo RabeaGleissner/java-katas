@@ -6,14 +6,13 @@ import junit.framework.TestCase;
 import primeFactors.PrimeFactors;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 
 public class PrimeFactorsTest extends TestCase {
     private List<Integer> list(int... ints) {
-        List<Integer> list = new ArrayList<Integer>();
-        for (int i : ints)
-            list.add(i);
+        List<Integer> list = Arrays.asList();
         return list;
     }
     private List<Integer> list() {
@@ -31,4 +30,5 @@ public class PrimeFactorsTest extends TestCase {
     public void testThree() throws Exception {
         assertEquals(list(3),generate(3));
     }
+
 }
