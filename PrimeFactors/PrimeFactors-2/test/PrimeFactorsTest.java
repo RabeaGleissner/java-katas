@@ -3,32 +3,30 @@ import static org.junit.Assert.assertEquals;
 
 import static primeFactors.PrimeFactors.generate;
 import junit.framework.TestCase;
+import org.junit.Test;
 import primeFactors.PrimeFactors;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.List;
 
 
-public class PrimeFactorsTest extends TestCase {
-    private List<Integer> list(int... ints) {
-        List<Integer> list = Arrays.asList();
-        return list;
-    }
-    private List<Integer> list() {
-        return new ArrayList<Integer>();
-    }
+public class PrimeFactorsTest {
 
+    @Test
     public void testOne() throws Exception {
-        assertEquals(list(),generate(1));
+        assertEquals(Arrays.asList(),generate(1));
     }
 
+    @Test
     public void testTwo() throws Exception {
-        assertEquals(list(2),generate(2));
+        assertEquals(Arrays.asList(2),generate(2));
     }
 
+    @Test
     public void testThree() throws Exception {
-        assertEquals(list(3),generate(3));
+        assertEquals(Arrays.asList(3),generate(3));
     }
 
 }
