@@ -17,4 +17,9 @@ public class PrimeFactorsTest {
         assertEquals(Arrays.asList(2), generate(2));
 
     }
+
+    @Test
+    public void testThree() {
+        assertEquals(Arrays.asList(3), generate(3));
+    }
 }
