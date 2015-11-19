@@ -11,11 +11,10 @@ public class PrimeFactors {
                 primes.add(candidate);
                 n /= candidate;
             }
-            if (n > 1) {
-                primes.add(n);
-
-            }
         }
+        if (n > 1)
+            primes.add(n);
         return primes;
     }
 }
+
