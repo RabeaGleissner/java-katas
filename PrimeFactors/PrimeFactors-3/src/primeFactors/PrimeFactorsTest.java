@@ -8,12 +8,15 @@ import java.util.List;
 import static org.junit.Assert.*;
 
 public class PrimeFactorsTest {
-    private List<Integer> list() {
-        return Arrays.asList();
-    }
 
     @Test
     public void testOne() {
-       assertEquals(list(), PrimeFactors.generate(1));
+       assertEquals(Arrays.asList(), PrimeFactors.generate(1));
+    }
+
+    @Test
+    public void testTwo() {
+        assertEquals(Arrays.asList(2), PrimeFactors.generate(2));
+
     }
 }
