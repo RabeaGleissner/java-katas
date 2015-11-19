@@ -1,6 +1,7 @@
 import static org.junit.Assert.*;
 import static org.junit.Assert.assertEquals;
 
+import static primeFactors.PrimeFactors.generate;
 import junit.framework.TestCase;
 import primeFactors.PrimeFactors;
 
@@ -20,10 +21,10 @@ public class PrimeFactorsTest extends TestCase {
     }
 
     public void testOne() throws Exception {
-        assertEquals(list(), PrimeFactors.generate(1));
+        assertEquals(list(),generate(1));
     }
 
     public void testTwo() throws Exception {
-        assertEquals(list(2),PrimeFactors.generate(2));
+        assertEquals(list(2),generate(2));
     }
 }
