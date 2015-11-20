@@ -8,8 +8,11 @@ import static org.junit.Assert.*;
 
 public class PrimeFactorsTest {
 
-    private List<Integer> list() {
-        return new ArrayList<Integer>();
+    private List<Integer> list(int... ints) {
+        List<Integer> list = new ArrayList<Integer>();
+        for (int i : ints)
+            list.add(i);
+        return list;
     }
     @Test
     public void testOne() {
