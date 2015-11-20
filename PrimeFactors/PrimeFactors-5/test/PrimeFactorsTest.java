@@ -13,7 +13,7 @@ public class PrimeFactorsTest {
     }
 
     private List<Integer> list() {
-        return null;
+        return new ArrayList<Integer>();
     }
 
 }
