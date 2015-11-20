@@ -1,4 +1,5 @@
 import org.junit.Test;
+import primeFactors.PrimeFactors;
 
 import java.util.List;
 
