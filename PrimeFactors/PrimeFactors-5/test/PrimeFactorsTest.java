@@ -15,5 +15,9 @@ public class PrimeFactorsTest {
         assertEquals(list(), PrimeFactors.generate(1));
     }
 
+    @Test
+    public void testTwo() {
+        assertEquals(list(2),PrimeFactors.generate(2));
 
+    }
 }
