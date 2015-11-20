@@ -2,6 +2,7 @@ import org.junit.Test;
 import primeFactors.PrimeFactors;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import static org.junit.Assert.*;
@@ -17,7 +18,7 @@ public class PrimeFactorsTest {
 
     @Test
     public void testTwo() {
-        assertEquals(list(2),PrimeFactors.generate(2));
+        assertEquals(Arrays.asList(2),PrimeFactors.generate(2));
 
     }
 }
