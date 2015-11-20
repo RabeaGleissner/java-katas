@@ -5,12 +5,10 @@ import static org.junit.Assert.assertEquals;
 import java.util.*;
 
 public class PrimeFactorsTest {
-    private List<Integer> list() {
-        return new ArrayList<Integer>();
-    }
+
     @Test
     public void testOne() {
-        assertEquals(list(), generate(1));
+        assertEquals(Arrays.asList(), generate(1));
     }
 
     @Test
