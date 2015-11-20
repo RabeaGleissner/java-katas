@@ -1,11 +1,8 @@
-import org.junit.Test;
 import primeFactors.PrimeFactors;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
-import static org.junit.Assert.*;
+import static primeFactors.PrimeFactors.generate;
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
+import java.util.*;
 
 public class PrimeFactorsTest {
     private List<Integer> list() {
@@ -13,12 +10,12 @@ public class PrimeFactorsTest {
     }
     @Test
     public void testOne() {
-        assertEquals(list(), PrimeFactors.generate(1));
+        assertEquals(list(), generate(1));
     }
 
     @Test
     public void testTwo() {
-        assertEquals(Arrays.asList(2),PrimeFactors.generate(2));
+        assertEquals(Arrays.asList(2),generate(2));
 
     }
 }
