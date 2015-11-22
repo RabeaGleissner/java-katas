@@ -1,5 +1,5 @@
 package primeFactors;
-
+import static primeFactors.PrimeFactors.generate;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -16,12 +16,12 @@ public class PrimeFactorsTest {
     }
     @Test
     public void testOne() {
-        assertEquals(list(), PrimeFactors.generate(1));
+        assertEquals(list(),generate(1));
     }
 
     @Test
     public void testTwo() {
-        assertEquals(list(2), PrimeFactors.generate(2));
+        assertEquals(list(2),generate(2));
 
     }
 }
