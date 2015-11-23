@@ -8,7 +8,7 @@ import static org.junit.Assert.*;
 
 public class PrimeFactorsTest {
     List<Integer> list() {
-        return null;
+        return new ArrayList<Integer>();
     }
 
     @Test
