@@ -49,6 +49,6 @@ public class PrimeFactorsTest {
 
     @Test
     public void testNine() {
-        assertEquals(list(2,3), generate(9));
+        assertEquals(list(3,3), generate(9));
     }
 }
