@@ -8,9 +8,9 @@ public class Roman {
         if (arabic == 5) {
              return "V";
         }
-        while (arabic > 0) {
+        while (arabic >= 1) {
             roman += "I";
-            arabic --;
+            arabic -= 1;
         }
         return roman;
     }
