@@ -47,4 +47,21 @@ public class RomanTest {
     public void convertEight() {
         assertEquals("VIII", Roman.convert(8));
     }
+
+    @Test
+    public void convertFour() {
+        assertEquals("IV", Roman.convert(4));
+
+    }
+
+    @Test
+    public void convertCurrentYear() {
+        assertEquals("MMXV", Roman.convert(2015));
+
+    }
+
+    @Test
+    public void convert3999() {
+        assertEquals("MMMCMXCIX", Roman.convert(3999));
+    }
 }
