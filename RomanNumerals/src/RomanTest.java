@@ -21,4 +21,9 @@ public class RomanTest {
     public void converFive() {
         assertEquals("V", Roman.convert(5));
     }
+
+    @Test
+    public void convertTen() {
+        assertEquals("X", Roman.convert(10));
+    }
 }
