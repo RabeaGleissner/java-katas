@@ -26,4 +26,9 @@ public class RomanTest {
     public void convertTen() {
         assertEquals("X", Roman.convert(10));
     }
+
+    @Test
+    public void convertTwenty() {
+        assertEquals("XX", Roman.convert(20));
+    }
 }
