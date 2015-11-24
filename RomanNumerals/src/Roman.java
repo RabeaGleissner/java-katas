@@ -1,9 +1,10 @@
 public class Roman {
     public static String convert(int arabic) {
-        if (arabic > 1) {
-            return "II";
-        } else {
-            return "I";
+        String roman = "";
+        while (arabic > 0) {
+            roman += "I";
+            arabic --;
         }
+        return roman;
     }
 }
