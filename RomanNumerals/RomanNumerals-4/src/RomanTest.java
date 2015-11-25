@@ -19,4 +19,16 @@ public class RomanTest {
         assertEquals("III", Roman.convert(3));
 
     }
+
+    @Test
+    public void convert5() {
+        assertEquals("V", Roman.convert(5));
+
+    }
+
+    @Test
+    public void convert7() {
+        assertEquals("VII", Roman.convert(7));
+
+    }
 }
