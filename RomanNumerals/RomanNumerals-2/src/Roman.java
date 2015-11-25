@@ -1,29 +1,20 @@
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class Roman {
 
     public static String convert(int arabic) {
-        HashMap<Integer, String> arabicToRoman = new HashMap<Integer, String>();
-        arabicToRoman.put(1, "I");
-        arabicToRoman.put(5, "V");
+        Map<Integer, String> arabicToRoman = new LinkedHashMap<>();
         arabicToRoman.put(10, "X");
+        arabicToRoman.put(5, "V");
+        arabicToRoman.put(1, "I");
 
         String roman = "";
-        for (Map.Entry<Integer, String> entry : arabicToRoman.entrySet()) {
-            if (arabic >= arabicToRoman.getKey()){
-                roman += arabicToRoman.getValue();
-                arabic -= arabicToRoman.getKey();
+        for (Map.Entry<Integer, String> arabicRomanPair: arabicToRoman.entrySet()) {
+            if (arabic >= arabicRomanPair.getKey()){
+                roman += arabicRomanPair.getValue();
+                arabic -= arabicRomanPair.getKey();
             }
         }
-//        if (arabic >= 10) {
-//            roman += arabicToRoman.get(10);
-//            arabic -= 10;
-//        }
-//        if (arabic >= 5) {
-//            roman += arabicToRoman.get(5);
-//            arabic -= 5;
-//        }
         for (int i=0; i < arabic; i++) {
             roman += arabicToRoman.get(1);
         }
