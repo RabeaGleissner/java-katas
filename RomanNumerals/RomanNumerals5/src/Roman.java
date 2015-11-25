@@ -2,18 +2,16 @@ public class Roman {
 
     public static String convert(int arabic) {
         String roman = "";
-        while (arabic >= 50) {
-            roman += "L";
-            arabic -= 50;
+        int[] ARABIC = {50, 10, 1};
+        String[] ROMAN = {"L", "X", "I"};
+
+        for (int i = 0; i < ARABIC.length; i++) {
+            while (arabic >= ARABIC[i]) {
+                roman += ROMAN[i];
+                arabic -= ARABIC[i];
+            }
         }
-        while (arabic >= 10) {
-            roman += "X";
-            arabic -= 10;
-        }
-        while (arabic > 0) {
-            roman += "I";
-            arabic --;
-        }
+
         return roman;
     }
 }
