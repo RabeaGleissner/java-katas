@@ -15,9 +15,6 @@ public class Roman {
                 arabic -= arabicRomanPair.getKey();
             }
         }
-        for (int i=0; i < arabic; i++) {
-            roman += arabicToRoman.get(1);
-        }
         return roman;
     }
 
