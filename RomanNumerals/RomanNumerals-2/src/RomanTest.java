@@ -41,6 +41,10 @@ public class RomanTest {
     @Test
     public void convert36() {
         assertEquals("XXXVIII", Roman.convert(38));
+    }
 
+    @Test
+    public void convert4() {
+        assertEquals("IV", Roman.convert(4));
     }
 }
