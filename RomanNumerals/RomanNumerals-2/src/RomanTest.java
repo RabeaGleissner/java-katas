@@ -26,7 +26,6 @@ public class RomanTest {
     @Test
     public void convert7() {
         assertEquals("VII", Roman.convert(7));
-
     }
 
     @Test
@@ -37,6 +36,11 @@ public class RomanTest {
     @Test
     public void convert18() {
         assertEquals("XVIII", Roman.convert(18));
+    }
+
+    @Test
+    public void convert36() {
+        assertEquals("XXXVIII", Roman.convert(38));
 
     }
 }

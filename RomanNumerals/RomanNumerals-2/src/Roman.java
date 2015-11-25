@@ -10,7 +10,7 @@ public class Roman {
 
         String roman = "";
         for (Map.Entry<Integer, String> arabicRomanPair: arabicToRoman.entrySet()) {
-            if (arabic >= arabicRomanPair.getKey()){
+            while (arabic >= arabicRomanPair.getKey()){
                 roman += arabicRomanPair.getValue();
                 arabic -= arabicRomanPair.getKey();
             }
