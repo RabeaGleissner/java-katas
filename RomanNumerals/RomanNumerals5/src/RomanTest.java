@@ -32,4 +32,10 @@ public class RomanTest {
     public void convert50() {
         assertEquals("L", Roman.convert(50));
     }
+
+    @Test
+    public void convert4() {
+        assertEquals("IV", Roman.convert(4));
+
+    }
 }
