@@ -43,4 +43,16 @@ public class RomanTest {
         assertEquals("C", Roman.convert(100));
 
     }
+
+    @Test
+    public void convert849() {
+        assertEquals("DCCCXLIX", Roman.convert(849));
+
+    }
+
+    @Test
+    public void convert3999() {
+        assertEquals("MMMCMXCIX", Roman.convert(3999));
+
+    }
 }
