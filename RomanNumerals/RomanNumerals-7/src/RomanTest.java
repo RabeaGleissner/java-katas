@@ -31,4 +31,10 @@ public class RomanTest {
         assertEquals("XX", Roman.convert(20));
 
     }
+
+    @Test
+    public void convert100() {
+        assertEquals("C", Roman.convert(100));
+
+    }
 }
