@@ -22,6 +22,12 @@ public class RomanTest {
     }
 
     @Test
+    public void convert4() {
+        assertEquals("IV", Roman.convert(4));
+
+    }
+
+    @Test
     public void convert10() {
         assertEquals("X", Roman.convert(10));
     }
