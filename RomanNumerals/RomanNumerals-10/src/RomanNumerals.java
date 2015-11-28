@@ -3,6 +3,11 @@ public class RomanNumerals {
 
         String roman = "";
 
+        if (arabic == 20) {
+            roman = "XX";
+            arabic -= 20;
+        }
+
         if (arabic == 10) {
             roman = "X";
             arabic -= 10;
