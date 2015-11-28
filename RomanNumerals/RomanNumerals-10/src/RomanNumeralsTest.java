@@ -19,4 +19,10 @@ public class RomanNumeralsTest {
         assertEquals("III", RomanNumerals.convert(3));
 
     }
+
+    @Test
+    public void convert10() {
+        assertEquals("X", RomanNumerals.convert(10));
+
+    }
 }
