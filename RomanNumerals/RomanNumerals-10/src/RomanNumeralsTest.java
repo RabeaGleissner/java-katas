@@ -21,6 +21,12 @@ public class RomanNumeralsTest {
     }
 
     @Test
+    public void convert4() {
+        assertEquals("IV", RomanNumerals.convert(4));
+
+    }
+
+    @Test
     public void convert10() {
         assertEquals("X", RomanNumerals.convert(10));
 

@@ -3,8 +3,8 @@ public class RomanNumerals {
 
         String roman = "";
 
-        int[] ARABIC = {100, 10, 1};
-        String[] ROMAN = {"C", "X", "I"};
+        int[] ARABIC = {100, 10, 4, 1};
+        String[] ROMAN = {"C", "X", "IV", "I"};
 
         for (int i = 0; i < ARABIC.length; i++) {
             while (arabic >= ARABIC[i]) {
