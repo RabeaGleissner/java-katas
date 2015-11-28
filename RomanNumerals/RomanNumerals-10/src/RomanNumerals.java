@@ -3,19 +3,14 @@ public class RomanNumerals {
 
         String roman = "";
 
-        while (arabic >= 100) {
-            roman += "C";
-            arabic -= 100;
-        }
+        int[] ARABIC = {100, 10, 1};
+        String[] ROMAN = {"C", "X", "I"};
 
-        while (arabic >= 10) {
-            roman += "X";
-            arabic -= 10;
-        }
-
-        while (arabic >= 1) {
-            roman += "I";
-            arabic -= 1;
+        for (int i = 0; i < ARABIC.length; i++) {
+            while (arabic >= ARABIC[i]) {
+                roman += ROMAN[i];
+                arabic -= ARABIC[i];
+            }
         }
 
         return roman;
