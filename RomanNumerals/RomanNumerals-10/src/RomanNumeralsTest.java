@@ -13,4 +13,10 @@ public class RomanNumeralsTest {
         assertEquals("II", RomanNumerals.convert(2));
 
     }
+
+    @Test
+    public void convert3() {
+        assertEquals("III", RomanNumerals.convert(3));
+
+    }
 }
