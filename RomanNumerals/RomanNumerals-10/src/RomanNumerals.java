@@ -3,13 +3,13 @@ public class RomanNumerals {
 
         String roman = "";
 
-        if (arabic == 20) {
-            roman = "XX";
-            arabic -= 20;
+        while (arabic >= 100) {
+            roman += "C";
+            arabic -= 100;
         }
 
-        if (arabic == 10) {
-            roman = "X";
+        while (arabic >= 10) {
+            roman += "X";
             arabic -= 10;
         }
 
