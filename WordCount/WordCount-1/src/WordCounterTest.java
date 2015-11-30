@@ -35,4 +35,14 @@ public class WordCounterTest {
 
     }
 
+    @Test
+    public void countsMultipleOccurences() {
+        expectedWordCount.put("fish", 4);
+        expectedWordCount.put("one", 1);
+        expectedWordCount.put("two", 1);
+        expectedWordCount.put("three", 1);
+        expectedWordCount.put("fried", 1);
+        actualWordCount = wordCounter.phrase("one fish two fish three fish fried fish");
+        assertEquals(expectedWordCount, actualWordCount);
+    }
 }
