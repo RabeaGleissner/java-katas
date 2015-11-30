@@ -6,6 +6,11 @@ public class CoinChanger {
 
         List<Integer> change = new ArrayList<>();
 
+        if (amount >= 10) {
+            change.add(10);
+            amount -= 10;
+        }
+
         if (amount >= 5) {
             change.add(5);
             amount -= 5;
