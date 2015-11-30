@@ -17,4 +17,15 @@ public class WordCounterTest {
         assertEquals(expectedWordCount, actualWordCount);
     }
 
+    @Test
+    public void countsOneOfEach() {
+        Map<String, Integer> actualWordCount = new HashMap<>();
+        Map<String, Integer> expectedWordCount = new HashMap<>();
+        expectedWordCount.put("one", 1);
+        expectedWordCount.put("of", 1);
+        expectedWordCount.put("each", 1);
+        actualWordCount = wordCounter.phrase("one of each");
+        assertEquals(expectedWordCount, actualWordCount);
+
+    }
 }
