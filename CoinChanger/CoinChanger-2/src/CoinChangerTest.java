@@ -1,12 +1,26 @@
 import org.junit.Test;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 import static org.junit.Assert.*;
 
 public class CoinChangerTest {
 
-    @Test
-    public void changeForOne() {
-        assertEquals(1, CoinChanger.giveChange(1));
+    private ArrayList<Integer> coins(Integer...i) {
+        return new ArrayList<>(Arrays.asList(i));
     }
 
+    @Test
+    public void changeForOne() {
+        assertEquals(coins(1), CoinChanger.giveChange(1));
+    }
+
+    @Test
+    public void changeForTwo() {
+        assertEquals(coins(1,1), CoinChanger.giveChange(2));
+
+    }
+
+    
 }
