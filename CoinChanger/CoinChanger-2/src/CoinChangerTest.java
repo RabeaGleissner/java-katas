@@ -22,5 +22,9 @@ public class CoinChangerTest {
 
     }
 
-    
+    @Test
+    public void changeForThree() {
+        assertEquals(coins(1,1,1), CoinChanger.giveChange(3));
+
+    }
 }
