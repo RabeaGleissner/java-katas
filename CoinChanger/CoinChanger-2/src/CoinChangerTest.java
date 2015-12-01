@@ -27,4 +27,10 @@ public class CoinChangerTest {
         assertEquals(coins(1,1,1), CoinChanger.giveChange(3));
 
     }
+
+    @Test
+    public void changeForFive() {
+        assertEquals(coins(5), CoinChanger.giveChange(5));
+
+    }
 }
