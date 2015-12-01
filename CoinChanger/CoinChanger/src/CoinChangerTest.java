@@ -22,4 +22,10 @@ public class CoinChangerTest {
         assertEquals(coins(1,1), CoinChanger.giveChange(2));
 
     }
+
+    @Test
+    public void changeFor3() {
+        assertEquals(coins(1,1,1), CoinChanger.giveChange(3));
+
+    }
 }
