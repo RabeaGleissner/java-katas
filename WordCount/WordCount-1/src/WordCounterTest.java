@@ -45,4 +45,15 @@ public class WordCounterTest {
         actualWordCount = wordCounter.phrase("one fish two fish three fish fried fish");
         assertEquals(expectedWordCount, actualWordCount);
     }
+
+    @Test
+    public void ignoresPunctuation() {
+        expectedWordCount.put("car", 1);
+        expectedWordCount.put("carpet", 1);
+        expectedWordCount.put("as", 1);
+        expectedWordCount.put("java", 1);
+        expectedWordCount.put("javascript", 1);
+        actualWordCount = wordCounter.phrase("car : carpet as java : javascript!!&@$%^&");
+        assertEquals(expectedWordCount, actualWordCount);
+    }
 }
