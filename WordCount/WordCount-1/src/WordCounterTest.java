@@ -56,4 +56,13 @@ public class WordCounterTest {
         actualWordCount = wordCounter.phrase("car : carpet as java : javascript!!&@$%^&");
         assertEquals(expectedWordCount, actualWordCount);
     }
+
+    @Test
+    public void includeNumbers() {
+        expectedWordCount.put("testing", 2);
+        expectedWordCount.put("1", 1);
+        expectedWordCount.put("2", 1);
+        actualWordCount = wordCounter.phrase("testing 1, 2 testing");
+        assertEquals(expectedWordCount, actualWordCount);
+    }
 }
