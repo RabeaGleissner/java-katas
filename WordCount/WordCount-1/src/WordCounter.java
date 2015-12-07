@@ -6,7 +6,7 @@ public class WordCounter {
 
         Map<String, Integer> wordsWithCount = new HashMap<>();
 
-        String[] words = phrase.replaceAll("[^a-z0-9]", " ").split("\\s+");
+        String[] words = phrase.toLowerCase().replaceAll("[^a-z0-9]", " ").split("\\s+");
 
         for (String word : words) {
             Integer count = 0;

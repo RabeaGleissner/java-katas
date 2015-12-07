@@ -65,4 +65,11 @@ public class WordCounterTest {
         actualWordCount = wordCounter.phrase("testing 1, 2 testing");
         assertEquals(expectedWordCount, actualWordCount);
     }
+
+    @Test
+    public void normaliseCase() {
+        expectedWordCount.put("go", 3);
+        actualWordCount = wordCounter.phrase("Go Go GO");
+        assertEquals(expectedWordCount, actualWordCount);
+    }
 }
